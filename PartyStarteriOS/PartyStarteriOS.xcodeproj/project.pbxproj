@@ -22,6 +22,23 @@
 		2A0DF9D618441344006F3CBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9B518441344006F3CBB /* UIKit.framework */; };
 		2A0DF9DE18441344006F3CBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A0DF9DC18441344006F3CBB /* InfoPlist.strings */; };
 		2A0DF9E018441344006F3CBB /* PartyStarteriOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF9DF18441344006F3CBB /* PartyStarteriOSTests.m */; };
+		555D660A18442564007525B8 /* bottles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65F918442564007525B8 /* bottles.jpg */; };
+		555D660B18442564007525B8 /* chill-apt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FA18442564007525B8 /* chill-apt.jpg */; };
+		555D660C18442564007525B8 /* cocktails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FB18442564007525B8 /* cocktails.jpg */; };
+		555D660D18442564007525B8 /* hands.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FC18442564007525B8 /* hands.jpg */; };
+		555D660E18442564007525B8 /* lan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FD18442564007525B8 /* lan.jpg */; };
+		555D660F18442564007525B8 /* large-solo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FE18442564007525B8 /* large-solo.jpg */; };
+		555D661018442564007525B8 /* lawn-party.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FF18442564007525B8 /* lawn-party.jpg */; };
+		555D661118442564007525B8 /* legs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660018442564007525B8 /* legs.jpg */; };
+		555D661218442564007525B8 /* miley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660118442564007525B8 /* miley.jpg */; };
+		555D661318442564007525B8 /* more-beer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660218442564007525B8 /* more-beer.jpg */; };
+		555D661418442564007525B8 /* more-hands.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660318442564007525B8 /* more-hands.jpg */; };
+		555D661518442564007525B8 /* more-miley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660418442564007525B8 /* more-miley.jpg */; };
+		555D661618442564007525B8 /* party.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660518442564007525B8 /* party.jpg */; };
+		555D661718442564007525B8 /* pour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660618442564007525B8 /* pour.jpg */; };
+		555D661818442564007525B8 /* sitting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660718442564007525B8 /* sitting.jpg */; };
+		555D661918442564007525B8 /* solo-cups.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660818442564007525B8 /* solo-cups.jpg */; };
+		555D661A18442564007525B8 /* twerk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660918442564007525B8 /* twerk.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +73,23 @@
 		2A0DF9DB18441344006F3CBB /* PartyStarteriOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PartyStarteriOSTests-Info.plist"; sourceTree = "<group>"; };
 		2A0DF9DD18441344006F3CBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A0DF9DF18441344006F3CBB /* PartyStarteriOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartyStarteriOSTests.m; sourceTree = "<group>"; };
+		555D65F918442564007525B8 /* bottles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottles.jpg; sourceTree = "<group>"; };
+		555D65FA18442564007525B8 /* chill-apt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chill-apt.jpg"; sourceTree = "<group>"; };
+		555D65FB18442564007525B8 /* cocktails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocktails.jpg; sourceTree = "<group>"; };
+		555D65FC18442564007525B8 /* hands.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hands.jpg; sourceTree = "<group>"; };
+		555D65FD18442564007525B8 /* lan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lan.jpg; sourceTree = "<group>"; };
+		555D65FE18442564007525B8 /* large-solo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "large-solo.jpg"; sourceTree = "<group>"; };
+		555D65FF18442564007525B8 /* lawn-party.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lawn-party.jpg"; sourceTree = "<group>"; };
+		555D660018442564007525B8 /* legs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = legs.jpg; sourceTree = "<group>"; };
+		555D660118442564007525B8 /* miley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miley.jpg; sourceTree = "<group>"; };
+		555D660218442564007525B8 /* more-beer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "more-beer.jpg"; sourceTree = "<group>"; };
+		555D660318442564007525B8 /* more-hands.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "more-hands.jpg"; sourceTree = "<group>"; };
+		555D660418442564007525B8 /* more-miley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "more-miley.jpg"; sourceTree = "<group>"; };
+		555D660518442564007525B8 /* party.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = party.jpg; sourceTree = "<group>"; };
+		555D660618442564007525B8 /* pour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pour.jpg; sourceTree = "<group>"; };
+		555D660718442564007525B8 /* sitting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sitting.jpg; sourceTree = "<group>"; };
+		555D660818442564007525B8 /* solo-cups.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "solo-cups.jpg"; sourceTree = "<group>"; };
+		555D660918442564007525B8 /* twerk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twerk.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +165,23 @@
 		2A0DF9B818441344006F3CBB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				555D65F918442564007525B8 /* bottles.jpg */,
+				555D65FA18442564007525B8 /* chill-apt.jpg */,
+				555D65FB18442564007525B8 /* cocktails.jpg */,
+				555D65FC18442564007525B8 /* hands.jpg */,
+				555D65FD18442564007525B8 /* lan.jpg */,
+				555D65FE18442564007525B8 /* large-solo.jpg */,
+				555D65FF18442564007525B8 /* lawn-party.jpg */,
+				555D660018442564007525B8 /* legs.jpg */,
+				555D660118442564007525B8 /* miley.jpg */,
+				555D660218442564007525B8 /* more-beer.jpg */,
+				555D660318442564007525B8 /* more-hands.jpg */,
+				555D660418442564007525B8 /* more-miley.jpg */,
+				555D660518442564007525B8 /* party.jpg */,
+				555D660618442564007525B8 /* pour.jpg */,
+				555D660718442564007525B8 /* sitting.jpg */,
+				555D660818442564007525B8 /* solo-cups.jpg */,
+				555D660918442564007525B8 /* twerk.jpg */,
 				2A0DF9B918441344006F3CBB /* PartyStarteriOS-Info.plist */,
 				2A0DF9BA18441344006F3CBB /* InfoPlist.strings */,
 				2A0DF9BD18441344006F3CBB /* main.m */,
@@ -234,9 +285,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555D661918442564007525B8 /* solo-cups.jpg in Resources */,
+				555D660B18442564007525B8 /* chill-apt.jpg in Resources */,
+				555D660F18442564007525B8 /* large-solo.jpg in Resources */,
+				555D661718442564007525B8 /* pour.jpg in Resources */,
+				555D660E18442564007525B8 /* lan.jpg in Resources */,
 				2A0DF9CD18441344006F3CBB /* Images.xcassets in Resources */,
+				555D660D18442564007525B8 /* hands.jpg in Resources */,
+				555D661818442564007525B8 /* sitting.jpg in Resources */,
+				555D661518442564007525B8 /* more-miley.jpg in Resources */,
 				2A0DF9BC18441344006F3CBB /* InfoPlist.strings in Resources */,
 				2A0DF9C518441344006F3CBB /* Main.storyboard in Resources */,
+				555D661618442564007525B8 /* party.jpg in Resources */,
+				555D660A18442564007525B8 /* bottles.jpg in Resources */,
+				555D661218442564007525B8 /* miley.jpg in Resources */,
+				555D661018442564007525B8 /* lawn-party.jpg in Resources */,
+				555D660C18442564007525B8 /* cocktails.jpg in Resources */,
+				555D661418442564007525B8 /* more-hands.jpg in Resources */,
+				555D661A18442564007525B8 /* twerk.jpg in Resources */,
+				555D661118442564007525B8 /* legs.jpg in Resources */,
+				555D661318442564007525B8 /* more-beer.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +535,7 @@
 				2A0DF9E518441344006F3CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A0DF9E618441344006F3CBB /* Build configuration list for PBXNativeTarget "PartyStarteriOSTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +544,7 @@
 				2A0DF9E818441344006F3CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
