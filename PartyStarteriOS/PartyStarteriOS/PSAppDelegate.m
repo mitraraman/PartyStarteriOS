@@ -7,13 +7,18 @@
 //
 
 #import "PSAppDelegate.h"
+#import <Parse/Parse.h>
+#import "PSParty.h"
 
 @implementation PSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+  // Override point for customization after application launch.
+  [PSParty registerSubclass];
+  [Parse setApplicationId:@"vpkqQoxmJU4HqOx57O81id3RTSwuKTbGJprxGgQc"
+                clientKey:@"OirL1K4XdE2wiJwFys81g74CyhGCb6jlq4UG2aCO"];
+  return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
