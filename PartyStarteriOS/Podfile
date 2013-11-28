@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+workspace 'PartyStarteriOS.xcworkspace'
+
+pod 'Parse', '~> 1.2.13'

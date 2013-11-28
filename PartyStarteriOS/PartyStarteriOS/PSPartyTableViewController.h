@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PSSecondViewController : UIViewController
+@interface PSPartyTableViewController : UITableViewController
 
 @end
