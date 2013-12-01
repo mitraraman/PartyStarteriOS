@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) PSParty* party;
 
+-(id)initWithParty:(PSParty *)party;
+
 @end

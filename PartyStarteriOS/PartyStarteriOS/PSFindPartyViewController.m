@@ -56,12 +56,12 @@ NSString* kPartySelectSegueIdentifier = @"partySelectSegue";
   PSPartyTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"PSPartyTableViewCell"];
   cell.nameLabel.text = party.name;
   cell.locationLabel.text = party.location;
+
   return cell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-  NSLog(@"prepareForSegue: %@", segue.identifier);
   if ([segue.identifier isEqual: kPartySelectSegueIdentifier]) {
     UITableViewCell* cell = sender;
     PSPartyViewController* controller = segue.destinationViewController;

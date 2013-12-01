@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* description;
 @property (nonatomic, strong) NSString* location;
+@property (nonatomic, strong) NSDate* date;
 @property (nonatomic, strong) NSNumber* totalCost;
 
 @end

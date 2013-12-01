@@ -6,8 +6,9 @@
 //  Copyright (c) 2013 raman.mitra. All rights reserved.
 //
 
-#import "PSParty.h"
+#import <Parse/Parse.h>
 #import <Parse/PFObject+Subclass.h>
+#import "PSParty.h"
 
 @implementation PSParty
 
@@ -19,6 +20,29 @@
 @dynamic name;
 @dynamic description;
 @dynamic location;
-@dynamic totalCost;
+
+-(NSNumber *)totalCost
+{
+  NSNumberFormatter* f = [[NSNumberFormatter alloc] init];
+  return [f numberFromString:self[@"totalCost"]];
+}
+
+-(void)setTotalCost:(NSNumber *)totalCost
+{
+  NSString* s = [NSString stringWithFormat:@"%@", totalCost];
+  [self setObject:s forKey:@"totalCost"];
+}
+
+-(void)setDate:(NSDate *)date
+{
+  NSLog(@"%@", date);
+}
+
+-(NSDate *)date
+{
+  NSString* dateStr = self[@"date"];
+  NSLog(@"%@", dateStr);
+  return [NSDate date];
+}
 
 @end

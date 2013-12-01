@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HA9-QW-9r5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1033" y="-142"/>
         </scene>
-        <!--Find Party View Controller - Second-->
+        <!--Find Party View Controller - Find Party-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="PSFindPartyViewController" sceneMemberID="viewController">
+                <viewController title="Find Party" id="QUy-BD-bpt" customClass="PSFindPartyViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="1B3-Xt-XEK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,10 +153,44 @@
             </objects>
             <point key="canvasLocation" x="653" y="514"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="LzO-IZ-ey9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odC-H2-ZCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="HA9-QW-9r5" customClass="PSLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YMO-g7-Bhg"/>
+                        <viewControllerLayoutGuide type="bottom" id="HDe-hH-q34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lu0-bC-6rM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tad-2j-caF">
+                                <rect key="frame" x="141" y="336" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="HA9-QW-9r5" eventType="touchUpInside" id="Iyc-bn-sbQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="8YX-ce-x5E" kind="modal" identifier="loginSegue" modalTransitionStyle="crossDissolve" id="7p7-Zu-eh0"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-294" y="180"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
                 <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fKT-5q-AUv"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
