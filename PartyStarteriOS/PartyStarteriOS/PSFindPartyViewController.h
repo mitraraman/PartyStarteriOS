@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PSPartyTableViewController : UITableViewController
+@interface PSFindPartyViewController : UITableViewController
 
 @end

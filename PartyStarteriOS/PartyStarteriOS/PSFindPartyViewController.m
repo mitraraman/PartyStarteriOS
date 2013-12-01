@@ -6,18 +6,18 @@
 //  Copyright (c) 2013 raman.mitra. All rights reserved.
 //
 
-#import "PSPartyTableViewController.h"
+#import "PSFindPartyViewController.h"
 #import <Parse/Parse.h>
 #import "PSParty.h"
 #import "PSPartyTableViewCell.h"
 
-@interface PSPartyTableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface PSFindPartyViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray* parties;
 
 @end
 
-@implementation PSPartyTableViewController
+@implementation PSFindPartyViewController
 
 - (void)viewDidLoad
 {

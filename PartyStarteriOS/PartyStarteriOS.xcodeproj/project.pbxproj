@@ -16,7 +16,7 @@
 		2A0DF9C218441344006F3CBB /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF9C118441344006F3CBB /* PSAppDelegate.m */; };
 		2A0DF9C518441344006F3CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0DF9C318441344006F3CBB /* Main.storyboard */; };
 		2A0DF9C818441344006F3CBB /* PSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF9C718441344006F3CBB /* PSFirstViewController.m */; };
-		2A0DF9CB18441344006F3CBB /* PSPartyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF9CA18441344006F3CBB /* PSPartyTableViewController.m */; };
+		2A0DF9CB18441344006F3CBB /* PSFindPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF9CA18441344006F3CBB /* PSFindPartyViewController.m */; };
 		2A0DF9CD18441344006F3CBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0DF9CC18441344006F3CBB /* Images.xcassets */; };
 		2A0DF9D418441344006F3CBB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9D318441344006F3CBB /* XCTest.framework */; };
 		2A0DF9D518441344006F3CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9B118441344006F3CBB /* Foundation.framework */; };
@@ -69,8 +69,8 @@
 		2A0DF9C418441344006F3CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A0DF9C618441344006F3CBB /* PSFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSFirstViewController.h; sourceTree = "<group>"; };
 		2A0DF9C718441344006F3CBB /* PSFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSFirstViewController.m; sourceTree = "<group>"; };
-		2A0DF9C918441344006F3CBB /* PSPartyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSPartyTableViewController.h; sourceTree = "<group>"; };
-		2A0DF9CA18441344006F3CBB /* PSPartyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSPartyTableViewController.m; sourceTree = "<group>"; };
+		2A0DF9C918441344006F3CBB /* PSFindPartyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSFindPartyViewController.h; sourceTree = "<group>"; };
+		2A0DF9CA18441344006F3CBB /* PSFindPartyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSFindPartyViewController.m; sourceTree = "<group>"; };
 		2A0DF9CC18441344006F3CBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2A0DF9D218441344006F3CBB /* PartyStarteriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PartyStarteriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0DF9D318441344006F3CBB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -232,20 +232,20 @@
 		9818E7F41847BCF600948871 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9818E7F51847BD1000948871 /* PartyTableView */,
+				9818E7F51847BD1000948871 /* FindPartyView */,
 				2A0DF9C618441344006F3CBB /* PSFirstViewController.h */,
 				2A0DF9C718441344006F3CBB /* PSFirstViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		9818E7F51847BD1000948871 /* PartyTableView */ = {
+		9818E7F51847BD1000948871 /* FindPartyView */ = {
 			isa = PBXGroup;
 			children = (
-				2A0DF9C918441344006F3CBB /* PSPartyTableViewController.h */,
-				2A0DF9CA18441344006F3CBB /* PSPartyTableViewController.m */,
+				2A0DF9C918441344006F3CBB /* PSFindPartyViewController.h */,
+				2A0DF9CA18441344006F3CBB /* PSFindPartyViewController.m */,
 			);
-			name = PartyTableView;
+			name = FindPartyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,7 +401,7 @@
 				9818E7EF1847B41000948871 /* PSPartyTableViewCell.m in Sources */,
 				9818E7F21847BB4000948871 /* PSParty.m in Sources */,
 				2A0DF9BE18441344006F3CBB /* main.m in Sources */,
-				2A0DF9CB18441344006F3CBB /* PSPartyTableViewController.m in Sources */,
+				2A0DF9CB18441344006F3CBB /* PSFindPartyViewController.m in Sources */,
 				2A0DF9C218441344006F3CBB /* PSAppDelegate.m in Sources */,
 				2A0DF9C818441344006F3CBB /* PSFirstViewController.m in Sources */,
 			);
