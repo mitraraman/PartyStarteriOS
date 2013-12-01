@@ -17,5 +17,7 @@
 @property (nonatomic, strong) NSString* location;
 @property (nonatomic, strong) NSDate* date;
 @property (nonatomic, strong) NSNumber* totalCost;
+@property (nonatomic, strong) NSNumber* fundedCost;
+@property (nonatomic, strong) NSNumber* minDonation;
 
 @end

@@ -26,6 +26,7 @@ NSString* kPartySelectSegueIdentifier = @"partySelectSegue";
 {
   [super viewDidLoad];
   PFQuery* query = [PSParty query];
+  [query whereKey:@"date" greaterThanOrEqualTo:[NSDate date]];
   [query findObjectsInBackgroundWithBlock:^(NSArray* objects, NSError* error) {
     self.parties = [objects copy];
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -56,6 +57,7 @@ NSString* kPartySelectSegueIdentifier = @"partySelectSegue";
   PSPartyTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"PSPartyTableViewCell"];
   cell.nameLabel.text = party.name;
   cell.locationLabel.text = party.location;
+  cell.donationTargetLabel.text = [NSString stringWithFormat:@"$%@", party.totalCost];
 
   return cell;
 }

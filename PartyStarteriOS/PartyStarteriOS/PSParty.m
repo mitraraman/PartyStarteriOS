@@ -10,17 +10,24 @@
 #import <Parse/PFObject+Subclass.h>
 #import "PSParty.h"
 
+NSDateFormatter* dateFormatter = nil;
+
 @implementation PSParty
 
 + (NSString*)parseClassName
 {
-  return @"Party";
+  return @"PSParty";
 }
 
 @dynamic name;
 @dynamic description;
 @dynamic location;
+@dynamic date;
+@dynamic totalCost;
+@dynamic fundedCost;
+@dynamic minDonation;
 
+/*
 -(NSNumber *)totalCost
 {
   NSNumberFormatter* f = [[NSNumberFormatter alloc] init];
@@ -35,14 +42,33 @@
 
 -(void)setDate:(NSDate *)date
 {
-  NSLog(@"%@", date);
+  if (dateFormatter == nil) {
+    dateFormatter = [[NSDateFormatter alloc] init];
+    NSLocale* enUSPOSIXLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+    [dateFormatter setLocale:enUSPOSIXLocale];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+  }
+
+  NSDate* now = [NSDate date];
+  NSString* dateStr = [dateFormatter stringFromDate:now];
+  [self setObject:dateStr forKey:@"date"];
 }
 
 -(NSDate *)date
 {
+  if (dateFormatter == nil) {
+    dateFormatter = [[NSDateFormatter alloc] init];
+    NSLocale* enUSPOSIXLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+    [dateFormatter setLocale:enUSPOSIXLocale];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+  }
+
   NSString* dateStr = self[@"date"];
-  NSLog(@"%@", dateStr);
-  return [NSDate date];
+  if ([dateStr isKindOfClass:[NSNull class]]) {
+    return nil;
+  }
+  return [dateFormatter dateFromString:dateStr];
 }
+*/
 
 @end
