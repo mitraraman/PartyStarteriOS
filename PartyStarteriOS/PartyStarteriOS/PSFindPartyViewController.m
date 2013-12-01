@@ -10,6 +10,9 @@
 #import <Parse/Parse.h>
 #import "PSParty.h"
 #import "PSPartyTableViewCell.h"
+#import "PSPartyViewController.h"
+
+NSString* kPartySelectSegueIdentifier = @"partySelectSegue";
 
 @interface PSFindPartyViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -54,6 +57,16 @@
   cell.nameLabel.text = party.name;
   cell.locationLabel.text = party.location;
   return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  NSLog(@"prepareForSegue: %@", segue.identifier);
+  if ([segue.identifier isEqual: kPartySelectSegueIdentifier]) {
+    UITableViewCell* cell = sender;
+    PSPartyViewController* controller = segue.destinationViewController;
+    controller.party = [self.parties objectAtIndex:[self.tableView indexPathForCell:cell].row];
+  }
 }
 
 @end

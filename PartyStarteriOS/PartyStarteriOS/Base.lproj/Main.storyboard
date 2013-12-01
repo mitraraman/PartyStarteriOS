@@ -74,11 +74,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PSPartyTableViewCell" rowHeight="100" id="aI9-gx-AsY" customClass="PSPartyTableViewCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PSPartyTableViewCell" rowHeight="100" id="aI9-gx-AsY" customClass="PSPartyTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aI9-gx-AsY" id="ZXf-RZ-Sor">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Party Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViL-ZB-h0w">
@@ -106,6 +106,7 @@
                                     <outlet property="donationTargetLabel" destination="pDO-XQ-iE1" id="Ull-4t-B1b"/>
                                     <outlet property="locationLabel" destination="CN3-Zb-DsP" id="mPc-Z0-11Y"/>
                                     <outlet property="nameLabel" destination="ViL-ZB-h0w" id="8xQ-vD-fad"/>
+                                    <segue destination="xcz-Tg-JDQ" kind="push" identifier="partySelectSegue" id="QTu-W8-WlF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -116,6 +117,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="514"/>
+        </scene>
+        <!--Party View Controller-->
+        <scene sceneID="oBe-8K-a66">
+            <objects>
+                <viewController id="xcz-Tg-JDQ" customClass="PSPartyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vja-GT-tbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="5f0-1Z-FNh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jA6-qH-cfs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iNr-rf-N3h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaS-nf-VS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="514"/>
         </scene>
         <!--Navigation Controller - Find Party-->
         <scene sceneID="ReF-Yn-fyn">

@@ -42,6 +42,7 @@
 		555D661A18442564007525B8 /* twerk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660918442564007525B8 /* twerk.jpg */; };
 		9818E7EF1847B41000948871 /* PSPartyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818E7EE1847B41000948871 /* PSPartyTableViewCell.m */; };
 		9818E7F21847BB4000948871 /* PSParty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818E7F11847BB4000948871 /* PSParty.m */; };
+		9851C97F184AC31700291F66 /* PSPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9851C97E184AC31700291F66 /* PSPartyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		9818E7EE1847B41000948871 /* PSPartyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPartyTableViewCell.m; sourceTree = "<group>"; };
 		9818E7F01847BB4000948871 /* PSParty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParty.h; sourceTree = "<group>"; };
 		9818E7F11847BB4000948871 /* PSParty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSParty.m; sourceTree = "<group>"; };
+		9851C97D184AC31700291F66 /* PSPartyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPartyViewController.h; sourceTree = "<group>"; };
+		9851C97E184AC31700291F66 /* PSPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPartyViewController.m; sourceTree = "<group>"; };
 		A8DB14C2E1CA4A41A441BE6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,6 +235,7 @@
 		9818E7F41847BCF600948871 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9851C980184AC31C00291F66 /* PartyView */,
 				9818E7F51847BD1000948871 /* FindPartyView */,
 				2A0DF9C618441344006F3CBB /* PSFirstViewController.h */,
 				2A0DF9C718441344006F3CBB /* PSFirstViewController.m */,
@@ -246,6 +250,15 @@
 				2A0DF9CA18441344006F3CBB /* PSFindPartyViewController.m */,
 			);
 			name = FindPartyView;
+			sourceTree = "<group>";
+		};
+		9851C980184AC31C00291F66 /* PartyView */ = {
+			isa = PBXGroup;
+			children = (
+				9851C97D184AC31700291F66 /* PSPartyViewController.h */,
+				9851C97E184AC31700291F66 /* PSPartyViewController.m */,
+			);
+			name = PartyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9851C97F184AC31700291F66 /* PSPartyViewController.m in Sources */,
 				9818E7EF1847B41000948871 /* PSPartyTableViewCell.m in Sources */,
 				9818E7F21847BB4000948871 /* PSParty.m in Sources */,
 				2A0DF9BE18441344006F3CBB /* main.m in Sources */,
