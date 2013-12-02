@@ -12,7 +12,6 @@
 #import "PSPartyViewController.h"
 
 @interface PSFirstViewController ()
-@property (strong, nonatomic) PSParty *party;
 @end
 
 @implementation PSFirstViewController
@@ -31,17 +30,32 @@
 
 - (IBAction)createParty:(id)sender
 {
-//    self.tableView.backgroundColor = [UIColor blackColor];
-//    self.tableView.separatorColor = [UIColor clearColor];
-//    PFQuery* query = [PSParty query];
-//    [query whereKey:@"date" greaterThanOrEqualTo:[NSDate date]];
-//    [query findObjectsInBackgroundWithBlock:^(NSArray* objects, NSError* error) {
-//        self.parties = [objects copy];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.tableView reloadData];
-//        });
-//    }];
-
+    NSString *eventName = self.eventName.text;
+    NSString *location = self.location.text;
+    NSString *date = self.dateLabel.text;
+    NSString *totalCost = self.totalCost.text;
+    NSString *minDonation = self.minDonation.text;
+    NSString *description = self.description.text;
+    if ([eventName isEqualToString:@""] || [location isEqualToString:@""] ||
+        [date isEqualToString:@""] || [totalCost isEqualToString:@""] ||
+        [minDonation isEqualToString:@""] || [description isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Uh Oh..." message:@"Please enter input in all fields." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
+        [alert show];
+    } else {
+        PFObject *newParty = [PFObject objectWithClassName:@"PSParty"];
+        newParty[@"date"] = self.dateTimePicker.date;
+        newParty[@"description"] = description;
+        NSLog(@"%@", description);
+        newParty[@"fundedCost"] = 0;
+        newParty[@"location"] = location;
+        NSLog(@"%@", location);
+        newParty[@"minDonation"] = [NSDecimalNumber decimalNumberWithString:minDonation];
+        newParty[@"name"] = eventName;
+        NSLog(@"%@", eventName);
+        newParty[@"totalCost"] = [NSDecimalNumber decimalNumberWithString:totalCost];
+        NSLog(@"%@", totalCost);
+        [newParty saveInBackground];
+    }
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -61,6 +75,8 @@
     return YES;
 }
 
+
+
 - (IBAction)chooseDate:(id)sender
 {
     [self.datePickerPopup setHidden:NO];
@@ -71,7 +87,6 @@
     NSString *dateString = [NSDateFormatter localizedStringFromDate:[self.dateTimePicker date]
                                                           dateStyle:NSDateFormatterShortStyle
                                                           timeStyle:NSDateFormatterFullStyle];
-    self.party.date = [self.dateTimePicker date];
     [self.dateLabel setText:dateString];
     [self.dateLabel setHidden:NO];
     [self.editDate setHidden:NO];
