@@ -26,7 +26,11 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-	// Do any additional setup after loading the view.
+  // Do any additional setup after loading the view.
+  UIImage* backgroundImage = [UIImage imageNamed:@"large-solo.jpg"];
+  UIImageView* backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
+  backgroundImageView.contentMode = UIViewContentModeCenter;
+  [self.view insertSubview:backgroundImageView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
