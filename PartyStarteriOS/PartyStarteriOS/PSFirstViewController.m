@@ -12,7 +12,7 @@
 #import "PSPartyViewController.h"
 
 @interface PSFirstViewController ()
-
+@property (strong, nonatomic) PSParty *party;
 @end
 
 @implementation PSFirstViewController
@@ -31,7 +31,34 @@
 
 - (IBAction)createParty:(id)sender
 {
+//    self.tableView.backgroundColor = [UIColor blackColor];
+//    self.tableView.separatorColor = [UIColor clearColor];
+//    PFQuery* query = [PSParty query];
+//    [query whereKey:@"date" greaterThanOrEqualTo:[NSDate date]];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray* objects, NSError* error) {
+//        self.parties = [objects copy];
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.tableView reloadData];
+//        });
+//    }];
+
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
 }
 
 - (IBAction)chooseDate:(id)sender
@@ -44,6 +71,7 @@
     NSString *dateString = [NSDateFormatter localizedStringFromDate:[self.dateTimePicker date]
                                                           dateStyle:NSDateFormatterShortStyle
                                                           timeStyle:NSDateFormatterFullStyle];
+    self.party.date = [self.dateTimePicker date];
     [self.dateLabel setText:dateString];
     [self.dateLabel setHidden:NO];
     [self.editDate setHidden:NO];

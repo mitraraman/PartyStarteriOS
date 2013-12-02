@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PSFirstViewController : UIViewController
+@interface PSFirstViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *eventName;
 @property (strong, nonatomic) IBOutlet UITextField *location;
