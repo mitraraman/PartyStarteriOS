@@ -6,23 +6,27 @@
 //  Copyright (c) 2013 raman.mitra. All rights reserved.
 //
 
-#import "PSPartyTableViewController.h"
+#import "PSFindPartyViewController.h"
 #import <Parse/Parse.h>
 #import "PSParty.h"
 #import "PSPartyTableViewCell.h"
+#import "PSPartyViewController.h"
 
-@interface PSPartyTableViewController () <UITableViewDataSource, UITableViewDelegate>
+NSString* kPartySelectSegueIdentifier = @"partySelectSegue";
+
+@interface PSFindPartyViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray* parties;
 
 @end
 
-@implementation PSPartyTableViewController
+@implementation PSFindPartyViewController
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   PFQuery* query = [PSParty query];
+  [query whereKey:@"date" greaterThanOrEqualTo:[NSDate date]];
   [query findObjectsInBackgroundWithBlock:^(NSArray* objects, NSError* error) {
     self.parties = [objects copy];
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -53,7 +57,18 @@
   PSPartyTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"PSPartyTableViewCell"];
   cell.nameLabel.text = party.name;
   cell.locationLabel.text = party.location;
+  cell.donationTargetLabel.text = [NSString stringWithFormat:@"$%@", party.totalCost];
+
   return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  if ([segue.identifier isEqual: kPartySelectSegueIdentifier]) {
+    UITableViewCell* cell = sender;
+    PSPartyViewController* controller = segue.destinationViewController;
+    controller.party = [self.parties objectAtIndex:[self.tableView indexPathForCell:cell].row];
+  }
 }
 
 @end
