@@ -14,5 +14,10 @@
 @property (nonatomic, strong) PSParty* party;
 
 -(id)initWithParty:(PSParty *)party;
+@property (strong, nonatomic) IBOutlet UILabel *partyLocation;
+@property (strong, nonatomic) IBOutlet UILabel *partyHost;
+@property (strong, nonatomic) IBOutlet UILabel *amountNeeded;
+@property (strong, nonatomic) IBOutlet UITextField *amountPitchIn;
+- (IBAction)pitchIn:(id)sender;
 
 @end

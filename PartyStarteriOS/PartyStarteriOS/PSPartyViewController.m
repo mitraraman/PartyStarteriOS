@@ -36,6 +36,7 @@
 {
   [super viewDidLoad];
   self.title = self.party.name;
+  self.amountNeeded.text = [NSString stringWithFormat:@"%d", [self.party.totalCost intValue] - [self.party.fundedCost intValue]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,4 +45,6 @@
   // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pitchIn:(id)sender {
+}
 @end
