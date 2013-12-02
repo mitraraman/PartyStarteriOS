@@ -10,4 +10,11 @@
 
 @interface PSFirstViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *eventName;
+@property (strong, nonatomic) IBOutlet UITextField *location;
+@property (strong, nonatomic) IBOutlet UIDatePicker *dateTimePicker;
+@property (strong, nonatomic) IBOutlet UITextField *totalCost;
+@property (strong, nonatomic) IBOutlet UITextField *minDonation;
+@property (strong, nonatomic) IBOutlet UITextView *description;
+
 @end
