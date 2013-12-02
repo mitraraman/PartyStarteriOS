@@ -41,6 +41,7 @@
 		555D661818442564007525B8 /* sitting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660718442564007525B8 /* sitting.jpg */; };
 		555D661918442564007525B8 /* solo-cups.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660818442564007525B8 /* solo-cups.jpg */; };
 		555D661A18442564007525B8 /* twerk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D660918442564007525B8 /* twerk.jpg */; };
+		75772AEF4A284A4AB02AC199 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF487982AD9F420E98A26975 /* libPods.a */; };
 		9818E7EF1847B41000948871 /* PSPartyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818E7EE1847B41000948871 /* PSPartyTableViewCell.m */; };
 		9818E7F21847BB4000948871 /* PSParty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818E7F11847BB4000948871 /* PSParty.m */; };
 		9851C97F184AC31700291F66 /* PSPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9851C97E184AC31700291F66 /* PSPartyViewController.m */; };
@@ -106,6 +107,7 @@
 		9851C97E184AC31700291F66 /* PSPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPartyViewController.m; sourceTree = "<group>"; };
 		9851C981184AD07100291F66 /* PSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginViewController.h; sourceTree = "<group>"; };
 		9851C982184AD07100291F66 /* PSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginViewController.m; sourceTree = "<group>"; };
+		EF487982AD9F420E98A26975 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				2A0DF9B418441344006F3CBB /* CoreGraphics.framework in Frameworks */,
 				2A0DF9B618441344006F3CBB /* UIKit.framework in Frameworks */,
 				2A0DF9B218441344006F3CBB /* Foundation.framework in Frameworks */,
+				75772AEF4A284A4AB02AC199 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +164,7 @@
 				2A0DF9B318441344006F3CBB /* CoreGraphics.framework */,
 				2A0DF9B518441344006F3CBB /* UIKit.framework */,
 				2A0DF9D318441344006F3CBB /* XCTest.framework */,
+				EF487982AD9F420E98A26975 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -564,12 +568,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartyStarteriOS/PartyStarteriOS-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
-					"\"${PODS_ROOT}/Headers/Parse\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "PartyStarteriOS/PartyStarteriOS-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -616,12 +615,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartyStarteriOS/PartyStarteriOS-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
-					"\"${PODS_ROOT}/Headers/Parse\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "PartyStarteriOS/PartyStarteriOS-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
