@@ -51,14 +51,22 @@ NSString* kPartySelectSegueIdentifier = @"partySelectSegue";
   return [self.parties count];
 }
 
+- (UIImage *)randomBackgroundImage {
+    NSArray *backgroundImages = [[NSArray alloc] initWithObjects:@"bottles.jpg",@"party.jpg",@"solo-cups.jpg",nil];
+    int randomNumber = arc4random() % [backgroundImages count];
+    UIImage *randomImage = [UIImage imageNamed:[backgroundImages objectAtIndex:randomNumber]];
+    return randomImage;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  UIImage* backgroundImage = [self randomBackgroundImage];
   PSParty* party = [self.parties objectAtIndex:indexPath.row];
   PSPartyTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"PSPartyTableViewCell"];
   cell.nameLabel.text = party.name;
   cell.locationLabel.text = party.location;
   cell.donationTargetLabel.text = [NSString stringWithFormat:@"$%@", party.totalCost];
-
+  cell.backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
   return cell;
 }
 
