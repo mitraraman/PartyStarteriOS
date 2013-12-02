@@ -17,4 +17,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *minDonation;
 @property (strong, nonatomic) IBOutlet UITextView *description;
 
+- (IBAction)createParty:(id)sender;
+
 @end
