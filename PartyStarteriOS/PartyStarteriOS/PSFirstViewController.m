@@ -34,4 +34,32 @@
     
 }
 
+- (IBAction)chooseDate:(id)sender
+{
+    [self.datePickerPopup setHidden:NO];
+}
+
+- (IBAction)dateSelected:(id)sender
+{
+    NSString *dateString = [NSDateFormatter localizedStringFromDate:[self.dateTimePicker date]
+                                                          dateStyle:NSDateFormatterShortStyle
+                                                          timeStyle:NSDateFormatterFullStyle];
+    [self.dateLabel setText:dateString];
+    [self.dateLabel setHidden:NO];
+    [self.editDate setHidden:NO];
+    [self.chooseDate setHidden:YES];
+    [self.datePickerPopup setHidden:YES];
+}
+
+- (IBAction)closePopup:(id)sender
+{
+    [self.datePickerPopup setHidden:YES];
+}
+
+
+- (IBAction)editDate:(id)sender
+{
+    [self.datePickerPopup setHidden:NO];
+}
+
 @end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27627CB4A1EA4B718E7F693C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DB14C2E1CA4A41A441BE6B /* libPods.a */; };
 		2A0DF9B218441344006F3CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9B118441344006F3CBB /* Foundation.framework */; };
 		2A0DF9B418441344006F3CBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9B318441344006F3CBB /* CoreGraphics.framework */; };
 		2A0DF9B618441344006F3CBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9B518441344006F3CBB /* UIKit.framework */; };
@@ -23,6 +22,8 @@
 		2A0DF9D618441344006F3CBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DF9B518441344006F3CBB /* UIKit.framework */; };
 		2A0DF9DE18441344006F3CBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A0DF9DC18441344006F3CBB /* InfoPlist.strings */; };
 		2A0DF9E018441344006F3CBB /* PartyStarteriOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF9DF18441344006F3CBB /* PartyStarteriOSTests.m */; };
+		2AE919FC184CF7C900C0CB71 /* Parse.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2AE919F2184CF7C900C0CB71 /* Parse.framework */; };
+		2AE91A08184CF87500C0CB71 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE919F2184CF7C900C0CB71 /* Parse.framework */; };
 		555D660A18442564007525B8 /* bottles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65F918442564007525B8 /* bottles.jpg */; };
 		555D660B18442564007525B8 /* chill-apt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FA18442564007525B8 /* chill-apt.jpg */; };
 		555D660C18442564007525B8 /* cocktails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 555D65FB18442564007525B8 /* cocktails.jpg */; };
@@ -79,6 +80,7 @@
 		2A0DF9DB18441344006F3CBB /* PartyStarteriOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PartyStarteriOSTests-Info.plist"; sourceTree = "<group>"; };
 		2A0DF9DD18441344006F3CBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A0DF9DF18441344006F3CBB /* PartyStarteriOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartyStarteriOSTests.m; sourceTree = "<group>"; };
+		2AE919F2184CF7C900C0CB71 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Pods/Parse/Parse.framework; sourceTree = "<group>"; };
 		555D65F918442564007525B8 /* bottles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottles.jpg; sourceTree = "<group>"; };
 		555D65FA18442564007525B8 /* chill-apt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chill-apt.jpg"; sourceTree = "<group>"; };
 		555D65FB18442564007525B8 /* cocktails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocktails.jpg; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 		9851C97E184AC31700291F66 /* PSPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPartyViewController.m; sourceTree = "<group>"; };
 		9851C981184AD07100291F66 /* PSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginViewController.h; sourceTree = "<group>"; };
 		9851C982184AD07100291F66 /* PSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginViewController.m; sourceTree = "<group>"; };
-		A8DB14C2E1CA4A41A441BE6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +113,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE91A08184CF87500C0CB71 /* Parse.framework in Frameworks */,
 				2A0DF9B418441344006F3CBB /* CoreGraphics.framework in Frameworks */,
 				2A0DF9B618441344006F3CBB /* UIKit.framework in Frameworks */,
 				2A0DF9B218441344006F3CBB /* Foundation.framework in Frameworks */,
-				27627CB4A1EA4B718E7F693C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,11 +156,11 @@
 		2A0DF9B018441344006F3CBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AE919F2184CF7C900C0CB71 /* Parse.framework */,
 				2A0DF9B118441344006F3CBB /* Foundation.framework */,
 				2A0DF9B318441344006F3CBB /* CoreGraphics.framework */,
 				2A0DF9B518441344006F3CBB /* UIKit.framework */,
 				2A0DF9D318441344006F3CBB /* XCTest.framework */,
-				A8DB14C2E1CA4A41A441BE6B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -363,6 +364,7 @@
 				555D661818442564007525B8 /* sitting.jpg in Resources */,
 				555D661518442564007525B8 /* more-miley.jpg in Resources */,
 				2A0DF9BC18441344006F3CBB /* InfoPlist.strings in Resources */,
+				2AE919FC184CF7C900C0CB71 /* Parse.framework in Resources */,
 				2A0DF9C518441344006F3CBB /* Main.storyboard in Resources */,
 				555D661618442564007525B8 /* party.jpg in Resources */,
 				555D660A18442564007525B8 /* bottles.jpg in Resources */,
@@ -559,9 +561,47 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mitraraman/Documents/CMU/SENIOR\\ 1/iOS/PartyStarteriOS/PartyStarteriOS/Pods/Parse",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartyStarteriOS/PartyStarteriOS-Prefix.pch";
 				INFOPLIST_FILE = "PartyStarteriOS/PartyStarteriOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mitraraman/Documents/CMU/SENIOR\\ 1/iOS/PartyStarteriOS/PartyStarteriOS",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Parse,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					StoreKit,
+					"-framework",
+					SystemConfiguration,
+					"-weak_framework",
+					Accounts,
+					"-weak_framework",
+					AdSupport,
+					"-weak_framework",
+					Security,
+					"-weak_framework",
+					Social,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -573,9 +613,47 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mitraraman/Documents/CMU/SENIOR\\ 1/iOS/PartyStarteriOS/PartyStarteriOS/Pods/Parse",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartyStarteriOS/PartyStarteriOS-Prefix.pch";
 				INFOPLIST_FILE = "PartyStarteriOS/PartyStarteriOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mitraraman/Documents/CMU/SENIOR\\ 1/iOS/PartyStarteriOS/PartyStarteriOS",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Parse,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					StoreKit,
+					"-framework",
+					SystemConfiguration,
+					"-weak_framework",
+					Accounts,
+					"-weak_framework",
+					AdSupport,
+					"-weak_framework",
+					Security,
+					"-weak_framework",
+					Social,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
