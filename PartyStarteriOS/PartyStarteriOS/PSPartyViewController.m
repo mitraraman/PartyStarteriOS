@@ -26,6 +26,7 @@
 - (id)initWithParty:(PSParty *)party
 {
   self = [super init];
+  self.party = party;
   if (self) {
     self.party = party;
   }

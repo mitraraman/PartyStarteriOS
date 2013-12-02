@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HA9-QW-9r5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HA9-QW-9r5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -78,7 +78,7 @@
                                     <outlet property="delegate" destination="CZ4-MO-1fc" id="cnG-VW-wqR"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4QE-uo-96l" userLabel="minDonation">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5.00" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4QE-uo-96l" userLabel="minDonation">
                                 <rect key="frame" x="106" y="185" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
@@ -94,7 +94,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4fn-CF-muH" userLabel="totalCost">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="25.00" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4fn-CF-muH" userLabel="totalCost">
                                 <rect key="frame" x="106" y="223" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
@@ -231,7 +231,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="dateTimePicker" destination="CmU-bz-Ead" id="Rfw-Ke-IsW"/>
                         <outlet property="description" destination="UU9-d2-Quy" id="e1Q-f2-Y9a"/>
                         <outlet property="editDate" destination="ekx-Ot-4r7" id="lDy-V7-54A"/>
-                        <outlet property="eventName" destination="GMu-TP-byB" id="HCI-y0-51D"/>
+                        <outlet property="eventName" destination="GMu-TP-byB" id="GQq-3c-5bg"/>
                         <outlet property="location" destination="lSZ-hn-mD9" id="P1C-sS-sSl"/>
                         <outlet property="minDonation" destination="4QE-uo-96l" id="Nal-hh-Zfn"/>
                         <outlet property="selectDate" destination="mAZ-0d-2b0" id="n8h-el-Epq"/>
